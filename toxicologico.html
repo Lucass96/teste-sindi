@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Sindifretur</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: MyBiz
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/mybiz-free-business-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            background-color: #ffffff;
+            background-image: url('caminho_da_imagem.png');
+            /* Substitua 'caminho_da_imagem.png' pelo caminho correto da imagem de fundo */
+            background-size: cover;
+        }
+
+        .map {
+            height: 350px;
+        }
+
+        #content {
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .info {
+            margin-bottom: 30px;
+        }
+
+        .info h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table-container th,
+        .table-container td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info ul {
+            padding-left: 0;
+            list-style-position: inside;
+            margin-top: 5px;
+        }
+
+        .section-background {
+            position: relative;
+        }
+
+        .section-background::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/slide/sindi.png);
+            background-size: 30%;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:contact@example.com">sindifretur90@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>3255-3554 / 3255-0039 / 3255-9502 / 9 1872-1850</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span>Sindifretur</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Sobre</a></li>
+          <li class="dropdown"><a href="#"><span>Piso Salarial 2023</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+              <li><a href="pisoSP.html">São Paulo</a></li>
+              <li><a href="pisoMogi.html">Mogi/Suzano</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="homologação.html">Homologações</a></li>
+          <li><a class="nav-link scrollto" href="odontologia.html">Odontologia</a></li>
+          <li><a class="nav-link scrollto" href="oftalmologista.html">Oftalmologista</a></li>
+          <li><a class="nav-link scrollto" href="toxicologico.html">Exame Toxicológico</a></li>
+         </ul> 
+
+         <ul>
+          <li><a class="nav-link scrollto " href="index.html#portfolio">Histórico</a></li>
+          <li><a href="juridico.html">Jurídico</a></li>
+          <li><a href="plr.html">Valor de PLR</a></li>
+          <li><a href="boletim.html">Boletim</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Colônia de Férias</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contato</a></li><br>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+    <!-- ======= Content Section ======= -->
+    <section id="content" class="section-background">
+        <div class="container">
+            <div class="section">
+                <h2>Exame Toxicológico Obrigatório</h2>
+                <p>O exame toxicológico voltou a ser exigido desde 1º de julho de 2023 para condutores das categorias C,
+                    D e E. Os condutores com idade inferior a 70 anos deverão realizar o exame a cada dois anos e meio.
+                    Eles terão até o final do ano de 2023 para cumprir essa obrigação. É fundamental que os condutores
+                    com exames pendentes acompanhem o calendário de escalonamento, que será estabelecido pela SENATRAN,
+                    para evitar multas no valor de R$ 1.467,35, a inclusão de 7 pontos na carteira e a abertura de
+                    processos administrativos para suspensão de suas habilitações.</p>
+            </div>
+
+            <div class="section">
+                <h2>Penalidades e Consequências</h2>
+                <p>Também passaram a vigorar as penalidades previstas no Código de Trânsito Brasileiro para esses
+                    condutores, conforme os artigos 165-B e 165-C.</p>
+                <p>A multa por não realizar o exame será considerada gravíssima, resultando na adição de sete pontos na
+                    carteira e em uma penalidade de R$ 1.467,35.</p>
+                <p>Em caso de reincidência no período de até 12 meses, a multa será de R$ 2.934,70, e o direito de
+                    dirigir poderá ser suspenso.</p>
+            </div>
+
+            <div class="section">
+                <h2>Implicações da Não Realização do Exame</h2>
+                <p>A nova lei estabelece que a não realização do exame toxicológico para obtenção e renovação da CNH
+                    impedirá o motorista de obter ou renovar sua habilitação até que apresente um resultado negativo em
+                    um novo exame. Além disso, a pessoa não poderá ser admitida como motorista em empresas de
+                    transportes.</p>
+            </div>
+
+            <div class="section">
+                <h2>Validade da CNH</h2>
+                <p>A validade da CNH é de 10 anos para condutores de até 50 anos de idade, 5 anos para condutores de 50
+                    a 70 anos e 3 anos para condutores acima de 70 anos.</p>
+
+                <p>
+                    Exame Toxicológico para renovação da CNH através do Sindifretur
+                </p>
+                <p>Associados R$50,00 (cinquenta reais) para maiores informações ligue para o sindicato</p>
+            </div>
+
+            <div class="section">
+                <h2>Pontuação da CNH</h2>
+                <p>Em relação à pontuação necessária para a suspensão da CNH, estão valendo as seguintes regras: 20
+                    pontos para condutores que cometeram duas infrações gravíssimas em 12 meses; 30 pontos para quem
+                    tiver cometido uma infração gravíssima; e 40 pontos sem infração gravíssima. Eis algumas das
+                    infrações consideradas gravíssimas:</p>
+                <ul>
+                    <li>Dirigir com carteira vencida há mais de 30 dias.</li>
+                    <li>Avançar sinal vermelho.</li>
+                    <li>Dirigir alcoolizado.</li>
+                    <li>Dirigir acima da velocidade a mais de 50% da velocidade máxima permitida.</li>
+                    <li>Ultrapassagens irregulares.</li>
+                </ul>
+                <p>Parar em ciclovia ou ciclofaixa passou a ser infração grave, sujeita a multa de R$ 195,23 e cinco
+                    pontos na CNH.</p>
+                <p>Obs.: O limite de 40 pontos sem considerar a gravidade da infração é válido somente para motoristas
+                    profissionais.</p>
+                <p>Essas mudanças valem somente para CNHs expedidas após 12 de abril de 2021.</p>
+            </div>
+
+            <div class="section">
+                <h2>Cuidado com as Multas de Trânsito</h2>
+                <p>Além dos altos valores, o maior problema ainda é o acúmulo de pontos na carteira de habilitação, pois
+                    ao atingir 40 (quarenta) pontos, os infratores são notificados a entregar a carteira de habilitação,
+                    que poderá ser suspensa de 01 (um) a 12 (doze) meses dependendo da gravidade das multas, e só voltam
+                    a dirigir após passarem pelo Curso de Reciclagem de Motoristas.</p>
+                <p>Os motoristas que forem flagrados embriagados, em situações de homicídio culposo ou lesão corporal
+                    culposa, poderão receber uma pena de prisão que não pode ser substituída por outras mais leves.</p>
+                <p>Quem insistir em dirigir com a carteira suspensa e for flagrado ao volante terá a carteira
+                    definitivamente cassada e poderá responder a inquérito policial.</p>
+                <p>No nosso caso o companheiro ainda perde o emprego.</p>
+                <p>As empresas devem comunicar e fornecer cópia da Notificação da Autuação e também da Notificação de
+                    Imposição da Penalidade, para que através do sindicato o motorista possa entrar com recurso.</p>
+            </div>
+
+            <div class="section">
+                <h2>Faça Valer o Seu Direito</h2>
+                <p>Para recorrer da multa o motorista associado deverá encaminhar ao Sindicato:</p>
+                <ul>
+                    <li>Cópia da Infração (Frente e verso)</li>
+                    <li>Cópia do Documento do Veículo</li>
+                    <li>Cópia da Habilitação (CNH)</li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- End Content Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-bottom d-flex justify-content-center"><br><br>
+                        &copy; Sindifretur. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Captura todos os links com href="#"
+          var scrollLinks = document.querySelectorAll('a[href="#"]');
+        
+          // Adiciona um ouvinte de evento de clique a cada link
+          scrollLinks.forEach(function (link) {
+            link.addEventListener("click", function (e) {
+              e.preventDefault(); // Impede o comportamento padrão de clicar em um link
+        
+              var targetId = link.getAttribute("data-scroll-target"); // Obtém o ID do alvo da rolagem
+              var targetElement = document.getElementById(targetId); // Encontra o elemento alvo
+        
+              if (targetElement) {
+                // Rola a página até o elemento alvo
+                window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: "smooth", // Rola suavemente
+                });
+              }
+            });
+          });
+        });
+        </script>
+    
+</body>
+
+</html>
